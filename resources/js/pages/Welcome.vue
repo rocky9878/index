@@ -36,7 +36,7 @@ const skills: string[] = [
     'Inertia',
     'TypeScript',
     'Tailwind CSS',
-    'AI assisted development',
+    'Statamic',
     'Docker',
 ];
 </script>
@@ -46,7 +46,7 @@ const skills: string[] = [
 
     <div class="min-h-screen bg-[#FDFDFC] text-[#1b1b18] dark:bg-[#0a0a0a] dark:text-[#EDEDEC]">
         <header class="mx-auto flex max-w-4xl items-center justify-between p-6 lg:p-8">
-            <span class="text-lg font-semibold">Matthijs bedaf</span>
+            <span class="text-lg font-semibold">Matthijs Bedaf</span>
             <nav class="flex items-center gap-4 text-sm">
                 <template v-if="$page.props.auth.user">
                     <Link
