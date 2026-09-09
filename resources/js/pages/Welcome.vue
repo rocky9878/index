@@ -11,22 +11,16 @@ interface Project {
 
 const projects: Project[] = [
     {
-        name: 'Project One',
-        description: 'A short description of what this project does and why it matters.',
-        tags: ['Laravel', 'Vue', 'Inertia'],
-        url: '#',
+        name: 'Chess engine',
+        description: 'A chess engine written from scratch in PHP, with a Vue and Inertia interface for playing against it in the browser.',
+        tags: ['Laravel', 'Vue', 'Inertia', 'Tailwind'],
+        url: 'https://chess.matthijs.bio',
     },
     {
-        name: 'Project Two',
-        description: 'A short description of what this project does and why it matters.',
-        tags: ['TypeScript', 'Tailwind'],
-        url: '#',
-    },
-    {
-        name: 'Project Three',
-        description: 'A short description of what this project does and why it matters.',
-        tags: ['PHP', 'PostgreSQL'],
-        url: '#',
+        name: 'Game Boy Color emulator',
+        description: 'A Game Boy Color emulator written in TypeScript, backed by a small Laravel API that syncs save states across devices.',
+        tags: ['TypeScript', 'Laravel','Inertia', 'Tailwind'],
+        url: 'https://gameboy.matthijs.bio',
     },
 ];
 
@@ -79,7 +73,10 @@ const skills: string[] = [
                     Hi, I'm Matthijs.
                 </h1>
                 <p class="mt-4 max-w-2xl text-lg text-[#706f6c] dark:text-[#A1A09A]">
-                    I like making things!
+                    I'm a full-stack developer who builds web apps with Laravel
+                    and Vue. In my spare time I like taking on problems that
+                    aren't strictly necessary &mdash; a chess engine, a Game Boy
+                    emulator &mdash; just to see how they work from the inside.
                 </p>
                 <div class="mt-8 flex flex-wrap gap-4 text-sm">
                     <a
@@ -90,6 +87,7 @@ const skills: string[] = [
                     </a>
                     <a
                         href="https://github.com/rocky9878"
+                        target="_blank"
                         class="rounded-sm border border-[#19140035] px-5 py-2 hover:border-[#1915014a] dark:border-[#3E3E3A] dark:hover:border-[#62605b]"
                     >
                         GitHub
@@ -99,7 +97,9 @@ const skills: string[] = [
 
             <section class="border-t border-[#19140015] py-16 dark:border-[#FFFFFF10]">
                 <h2 class="text-2xl font-semibold">Projects</h2>
-                <p class="pt-2 pl-4 text-white/60 text-sm">tip: login to access the full functionality!</p>
+                <p class="mt-2 text-sm text-[#706f6c] dark:text-[#A1A09A]">
+                    Log in to try the full versions with saved progress.
+                </p>
                 <div class="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                     <a
                         v-for="project in projects"
