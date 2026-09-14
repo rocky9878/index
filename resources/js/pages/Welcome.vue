@@ -22,6 +22,12 @@ const projects: Project[] = [
         tags: ['TypeScript', 'Laravel','Inertia', 'Tailwind'],
         url: 'https://gameboy.matthijs.bio',
     },
+    {
+        name: 'Decodive',
+        description: 'A peer-to-peer marketplace where people rent or sell event and festival decorations, complete with in-app messaging and paid listing promotion.',
+        tags: ['TypeScript', 'Vue', 'Laravel', 'Inertia', 'Tailwind', 'Filament'],
+        url: 'https://decodive.nl'
+    }
 ];
 
 const skills: string[] = [
@@ -75,8 +81,8 @@ const skills: string[] = [
                 <p class="mt-4 max-w-2xl text-lg text-[#706f6c] dark:text-[#A1A09A]">
                     I'm a full-stack developer who builds web apps with Laravel
                     and Vue. In my spare time I like taking on problems that
-                    aren't strictly necessary &mdash; a chess engine, a Game Boy
-                    emulator &mdash; just to see how they work from the inside.
+                    aren't strictly necessary, a chess engine, a Game Boy
+                    emulator just to see how they work from the inside.
                 </p>
                 <div class="mt-8 flex flex-wrap gap-4 text-sm">
                     <a
