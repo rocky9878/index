@@ -38,6 +38,8 @@ const skills: string[] = [
     'Tailwind CSS',
     'Statamic',
     'Docker',
+    'Git / GitHub',
+    'MySQL / MariaDB',
 ];
 </script>
 
@@ -47,30 +49,6 @@ const skills: string[] = [
     <div class="min-h-screen bg-[#FDFDFC] text-[#1b1b18] dark:bg-[#0a0a0a] dark:text-[#EDEDEC]">
         <header class="mx-auto flex max-w-4xl items-center justify-between gap-3 p-4 sm:p-6 lg:p-8">
             <span class="truncate text-base font-semibold sm:text-lg">Matthijs Bedaf</span>
-            <nav class="flex shrink-0 items-center gap-2 text-sm sm:gap-4">
-                <template v-if="$page.props.auth.user">
-                    <Link
-                        :href="logout()"
-                        class="whitespace-nowrap rounded-sm border border-[#19140035] px-3 py-1.5 sm:px-5 hover:border-[#1915014a] dark:border-[#3E3E3A] dark:hover:border-[#62605b]"
-                    >
-                        Log out
-                    </Link>
-                </template>
-                <template v-else>
-                    <Link
-                        :href="login()"
-                        class="whitespace-nowrap rounded-sm border border-transparent px-3 py-1.5 sm:px-5 hover:border-[#19140035] dark:hover:border-[#3E3E3A]"
-                    >
-                        Log in
-                    </Link>
-                    <Link
-                        :href="register()"
-                        class="whitespace-nowrap rounded-sm border border-[#19140035] px-3 py-1.5 sm:px-5 hover:border-[#1915014a] dark:border-[#3E3E3A] dark:hover:border-[#62605b]"
-                    >
-                        Register
-                    </Link>
-                </template>
-            </nav>
         </header>
 
         <main class="mx-auto max-w-4xl px-6 lg:px-8">
